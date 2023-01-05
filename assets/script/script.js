@@ -6,7 +6,7 @@ const display2 = document.querySelector('.display2')
 const display3 = document.querySelector('.display3')
 
 submit.onclick = function encript () {
-  const changeText = (input.value).toLowerCase()
+  const changeText = input.value.toLowerCase()
 
   console.log(changeText)
   const removeEmptySpaces = changeText.replace(/[^\w]/g, '') // this removes all the special charachters in a string
@@ -33,3 +33,4 @@ submit.onclick = function encript () {
   console.log(iterator)
   display2.innerHTML = iterator
 }
+ 
