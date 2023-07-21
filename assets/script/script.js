@@ -3,7 +3,7 @@ const submit = document.querySelector('.submitbtn')
 
 const display1 = document.querySelector('.display1')
 const display2 = document.querySelector('.display2')
-const display3 = document.querySelector('.display3')
+const reset = document.querySelector('.resetbtn')
 
 submit.onclick = function encript () {
   const changeText = input.value.toLowerCase()
@@ -20,12 +20,10 @@ submit.onclick = function encript () {
   console.log(seperateRectangle)
 
   let iterator = 0
-  let swap = 0
 
   for (let i = 0; i < seperateRectangle; i++) {
     for (let j = i; j < removeEmptySpaces.length; j += seperateRectangle) {
       iterator += removeEmptySpaces[j]
-      swap += removeEmptySpaces[j]
     }
 
     iterator += '\n'
@@ -33,4 +31,7 @@ submit.onclick = function encript () {
   console.log(iterator)
   display2.innerHTML = iterator
 }
- 
+
+reset.addEventListener('click', () => {
+  window.location.reload()
+})
