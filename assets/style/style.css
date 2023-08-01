@@ -125,4 +125,12 @@
 }
 
 .resetbtn:hover {
-  background-color: #da1313;}
+  background-color: #da1313;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 42%;
+    height: 53vh;
+  }
+}
