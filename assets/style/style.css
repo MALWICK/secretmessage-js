@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.app {
+  width: 30%;
+  height: 38vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #408e61;
+}
+
+.displayresult {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+.displayresult p {
+  font-size: 24px;
+}
+
+.messageinput {
+  width: 98%;
+  height: 40px;
+  padding: 4px;
+  text-align: center;
+  margin-top: 2%;
+  outline: none;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.submitbtn {
+  width: 98%;
+  height: 39px;
+  padding: 4px;
+  border-radius: 0.3rem;
+  background-color: #e5faba;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.submitbtn:hover {
+  background-color: #caee81;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.display {
+  width: 98%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 0.3rem;
+}
+
+.display2 {
+  width: 98%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid grey;
+  background-color: white;
+  margin-bottom: 2%;
+  border-radius: 0.3rem;
+}
+
+.reset {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.9%;
+}
+
+.resetbtn {
+  width: 100%;
+  height: 40px;
+  padding: 6px;
+  border-radius: 0.5rem;
+  margin-bottom: 1.4%;
+  background-color: #ee5139;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.resetbtn:hover {
+  background-color: #da1313;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 42%;
+    height: 53vh;
+  }
+}
